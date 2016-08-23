@@ -4,6 +4,7 @@
       "version": "1.0.0",
       "type": "platform"
     },
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
@@ -41,6 +42,10 @@
 
   "publishOptions": {
     "include": [
+      "Views/**",
+      "Themes/**",
+      "Extensions",
+      "config.json",
       "wwwroot",
       "web.config"
     ]

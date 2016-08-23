@@ -2,5 +2,6 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>e08da53d-0ee0-4-231-b9ee - FTP</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
