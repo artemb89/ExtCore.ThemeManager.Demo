@@ -1,4 +1,138 @@
 ﻿@{ 
     Layout = "_Layout";
 }
-<h1>Hello %USERNAME%</h1>
+<style>
+    .mdl-card{
+        width:100%;
+    }
+</style>
+<section class="section--center mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+        <h1>Choose theme!</h1>
+    </div>
+
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">Blue color theme</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Blue color theme
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <form method="post">
+                        <input type="hidden" name="themeName" value="Blue" />
+                        <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Change!" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">Red color theme</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Red color theme
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <form method="post">
+                        <input type="hidden" name="themeName" value="Red" />
+                        <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Change!" />
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="section--center mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Controls preview</h2>
+        </div>
+        <div class="mdl-card__supporting-text ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">Text...</label>
+                </div>
+            </form>
+            <!-- Numeric Textfield with Floating Label -->
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                    <label class="mdl-textfield__label" for="sample4">Number...</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+            </form>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                <span class="mdl-checkbox__label">Checkbox</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Checkbox</span>
+            </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                <span class="mdl-radio__label">First</span>
+            </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                <span class="mdl-radio__label">Second</span>
+            </label>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+                <span class="mdl-switch__label"></span>
+            </label>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                <input type="checkbox" id="switch-2" class="mdl-switch__input">
+                <span class="mdl-switch__label"></span>
+            </label>
+            <!-- Colored FAB button -->
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button>
+            <!-- Colored FAB button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button>
+            <!-- FAB button -->
+            <button class="mdl-button mdl-js-button mdl-button--fab">
+                <i class="material-icons">add</i>
+            </button>
+            <!-- FAB button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">add</i>
+            </button>
+            <!-- Disabled FAB button -->
+            <button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+                <i class="material-icons">add</i>
+            </button>
+            <!-- Raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised">
+                Button
+            </button>
+            <!-- Raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Button
+            </button>
+            <!-- Raised disabled button-->
+            <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+                Button
+            </button>
+            <!-- Colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Button
+            </button>
+            <!-- Accent-colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                Button
+            </button>
+            <!-- Accent-colored raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Button
+            </button>
+        </div>
+    </div>
+</section>

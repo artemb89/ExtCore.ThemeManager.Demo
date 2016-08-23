@@ -20,7 +20,8 @@ namespace ExtCore.ThemeManager.Demo
 
         public override void ConfigureServices(IServiceCollection services)
         {
-            base.ConfigureServices(services);         
+            base.ConfigureServices(services);
+            services.AddSingleton<IConfiguration>(configurationRoot);
         }
 
         public override void Configure(IApplicationBuilder applicationBuilder)
